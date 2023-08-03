@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "dark-geography-350304",
+  "private_key_id": "80d9fb7909197fc4fa56a86d69d07e5fc677fba0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCqOiAL/+yaSQBh\nEidAvffFIqZJVaSf67dl1X+KSVQHca6dOR8Y1jsHxUPLOuLWW+1Avtvzy3VfIyLw\nkRMshxXNUafw+GIFud7rmA1F7WhsgR2r7tUw8sYXkODVOiCW1tbVSOcXZKdwInz/\nael3IC4Ikq3vpoHnwpQBq/e3Cjn1IVMYOnClzSVV+rlwzM+FPkZp5h9Sb5g1xk+W\nhf+/3vlXqtWwK6x8eFdrQqTvhd+sW0B0ptgnsjZobhe8eW+hbiRngV1VhkX4+9T1\nWc7PA2lcy2fb+g+ztU+62WgkBo96s82o+uvJzFbWdgh6u0QVhbGSEIM+F2li7JF6\naTacaTN3AgMBAAECggEAGbOS+RzX9WeGRiG+iXjlOv+DSdlDdN3bH+X/TrrJlCIm\n8hgYyOA3o3G2Ta4DZ8gTZ04p2YJjo0yjztyon3V55jko+SoXarPoo3uerWst9Av+\nleIGkFBndlFqkOco2n1vjF5ofdC1symR4+Jy3IigSq0S0/c47+wh+qqjSSCjJY51\n3Vg7ILlPlH679RM9JnNLu0hwUdaFVo0Q9QFCDT3ZZPmI+2/ygDNEqUgOTQca9Db3\n8r7NXIEtpd6zGvEc6V/QPrRHAGMIcwdggoNqEldJIe5bMzKOeV0LRFdVJ47JOsUA\nUAkJnNQEnXl9mzRoQu4whJHL/MxOhmRmrfKvgFM44QKBgQDwAyUld03fbxA7qQ9D\nxJkgos9G7HNrCqhzg8XIOZxSls4AAu8lCIYhOShRRSc09VYYfnrfBGhx0zab1qtP\nIUd5C2RJ3+tATtbOtHsNUSvSwCeEazfEJrX7l1/BLAaZySNMYw3HxC0CBuAUfEU9\nTyaFs45lj98ic6tO5HZ/+DwPsQKBgQC1kPRE6/7j2n1NHt79++Ew4zUS3HSau6au\nguy9lBQQ4ilJWX3h7BmeKN+9A0EYlWOVWrco8NMQl7EA9wEScI68KbpbfqjkwRjn\nDhYHRhRZPRwB00jWEdW8ko11A2/IU4PaAxCertUiAxfuIQZ0sd6nv7Z92yAax4s5\nrUZe6QcnpwKBgQCRsAcLT/joCH2dCUjnxN2CTvFsxrhkoEqSG8mheT7nbvzKSv2o\nyBzK6+wKMOTUo5tIMPYai41uklvSiqLf3H6K/hw5L3+YQILpY+pRshTcz6DtIzvt\nh+XtOvx3wGadUNdpVbMWsID1ewDnzmslBPeILu7fvU4floDE2a8IjMDAcQKBgD4S\nWT/6wkAZYP7tj+SaqMjy1CEnlwGTJ4+/mLnTFu0StHSsEJodAkEMzjirFSUXZV0Z\nD0cC1dV1VoDy8L3iFxoC1gATlB/oV+Ad86/26Fv9xUZmeh8dJ8n4/D1FuIBu9MOi\nipsFQD4JerPhPHjGmk0VAImUUSx2jYVhVI578gM/AoGBAMe2g6c+Jn6okA1cjjFe\nZm89aZbyfjZj5oYfGuUo5o1ktkqF3xp+KCsDEZd1NhX8WLnh+zGeqV1YoBYOl8aZ\nuufhM+gXeLoMJEoCy73cPVmOsmwna902ukLf7PpYdDKqu0vKiShO3h5A0EuJQPpk\nUds9D5t2bym7aiY/hUOJKejC\n-----END PRIVATE KEY-----\n",
+  "client_email": "afsx-logger@dark-geography-350304.iam.gserviceaccount.com",
+  "client_id": "107178357468908622131",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/afsx-logger%40dark-geography-350304.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
