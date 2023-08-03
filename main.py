@@ -1,13 +1,12 @@
+import pyautogui
 from datetime import datetime
 from googleapiclient.discovery import build
 from google.oauth2 import service_account
 from time import sleep as wait
-import pydirectinput
 from tabulate import tabulate
 import shutil
 import keyboard
 import os
-from functions.ssFindnClick import *
 from functions.waitForButton import wait as waitForbutton
 from functions.waitForButton import clickTillgone
 import json
@@ -19,8 +18,12 @@ import platform
 config = json.load(open('config.json'))
 os_got = platform.system()
 
+if os_got == "Darwin":
+    screen_width, screen_height = pyautogui.size()
+else:
+    import pydirectinput
+    screen_width, screen_height = pydirectinput.size()
 
-screen_width, screen_height = pydirectinput.size()
 if os == "Darwin":
     pass
 else:
@@ -40,10 +43,11 @@ types = {
 }
 typesC = config["types"]
 typesC = [typeG.capitalize() for typeG in typesC]
+power = 0
 
 
 def on_exit():
-    global work_done, work_done_withoutSpace
+    global work_done, work_done_withoutSpace, power, types
     os.system('cls' if os.name == 'nt' else 'clear')
     endData = [
         ["Strength", "Durability", "Chakra",
@@ -98,8 +102,13 @@ def print_centered_header(header_text, char='=', padding=3):
 
 
 def press_key(key):
-    pydirectinput.keyDown(str(key))
-    pydirectinput.keyUp(str(key))
+    if os == "Darwin":
+        pyautogui.keyDown(str(key))
+        pyautogui.keyUp(str(key))
+
+    else:
+        pydirectinput.keyDown(str(key))
+        pydirectinput.keyUp(str(key))
 
 
 def autoReconnect():
@@ -156,7 +165,10 @@ def work(num_clicks, typeG):
         if not running:
             return
         down = num_clicks - i
-        pydirectinput.click(middle_x, middle_y+50)
+        if os == "Darwin":
+            pyautogui.click(middle_x, middle_y+50)
+        else:
+            pydirectinput.click(middle_x, middle_y+50)
         work_done_withoutSpace += 1
         press_key('space')
         work_done += 2
@@ -181,7 +193,7 @@ def getDetails():
 
 
 try:
-    init(5)
+    init(1)
     while True:
         if running:
             for typeG, v in types.items():
@@ -206,5 +218,5 @@ try:
                 config['docID'], f'\n[{localTime}] Work Done: {work_done}, w/o jump: {work_done_withoutSpace}, Power: {power}', )).start()
 except KeyboardInterrupt:
     on_exit()
-except Exception as e:
-    logger.error(e)
+# except Exception as e:
+#     logger.error(e)

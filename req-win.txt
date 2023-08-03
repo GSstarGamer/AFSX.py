@@ -1,0 +1,7 @@
+google-api-python-client
+pydirectinput
+tabulate
+keyboard
+opencv-python
+pyautogui
+pytesseract
