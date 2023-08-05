@@ -24,7 +24,7 @@ else:
     import pydirectinput
     screen_width, screen_height = pydirectinput.size()
 
-if os == "Darwin":
+if os_got == "Darwin":
     pass
 else:
     pytesseract.pytesseract.tesseract_cmd = 'C:/Program Files/Tesseract-OCR/tesseract.exe'
@@ -165,7 +165,7 @@ def work(num_clicks, typeG):
         if not running:
             return
         down = num_clicks - i
-        if os == "Darwin":
+        if os_got == "Darwin":
             pyautogui.click(middle_x, middle_y+50)
         else:
             pydirectinput.click(middle_x, middle_y+50)
