@@ -102,7 +102,7 @@ def print_centered_header(header_text, char='=', padding=3):
 
 
 def press_key(key):
-    if os == "Darwin":
+    if os_got == "Darwin":
         pyautogui.keyDown(str(key))
         pyautogui.keyUp(str(key))
 
